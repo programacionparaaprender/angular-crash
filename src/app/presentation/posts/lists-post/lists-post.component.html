@@ -1,0 +1,30 @@
+<!-- <p>{{ 'HELLO WORLD' | lowercase }}</p>
+<p>{{ 'hello world' | uppercase }}</p>
+<p>{{ userPost | json }}</p>
+<p>{{ 'Angular Pipes' | slice:0:7 }}</p>
+<p>{{ [1,2,3,4,5] | slice:1:4 }}</p>
+<p>{{ 'angular pipes' | uppercase | slice:0:7 }}</p>
+<p>{{ 'angular pipes' | reverse }}</p> -->
+@for(post of userPost; track post.id){
+    <div class="post">
+        <h2>{{ post.user }}</h2>
+        <p>{{ post.content }}</p>
+        <div class="actions">
+            <button (click)="likePost(post.id)">
+                {{ likedPosts.has(post.id) ? 'Unlike': 'Like' }}
+            </button>
+            @if(likedPosts.has(post.id)){
+                <span>You liked this post!</span>
+            }
+        </div>
+        <div class="comments" [formGroup]="myForm">
+            <ul>
+                @for(comment of post.comments; track comment){
+                    <li>{{ comment.message }}</li>
+                }
+            </ul>
+            <input formControlName="post" />
+            <button type="button" (click)="addPost(post.id)">Post</button>
+        </div>
+    </div>
+}

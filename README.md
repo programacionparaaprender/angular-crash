@@ -1,27 +1,54 @@
-# AngularCrash
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+## curso
+>- https://www.udemy.com/course/angular-crash-course-learn-angular-at-jet-speed/learn/lecture/46743667#overview
 
-## Development server
+## Sección 1: Introduction
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 1. What is Angular
 
-## Code scaffolding
+### 2. NodeJS vs Angular
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 3. Setting Up the Development Environment
 
-## Build
+### 4. Components In Angular
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 5. Quick Note!
 
-## Running unit tests
+### 6. Creating Angular Project with Project Walkthrough
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 7. Creating Angular Component and Launching the App
+>- ng generate component presentation/posts/posts
+>- ng generate component presentation/posts/lists-post
+### 8. Facebook Posts App Demo
 
-## Running end-to-end tests
+### 9. Data Binding - Interpolation and Property Binding
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 10. Directives - Using NgFor to Display Posts
 
-## Further help
+### 11. Displaying Post Comments
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 12. Event Hanfling - Adding Behavior
+
+### 13. Two Way binding - Adding Comments to Post
+
+### 14. SCSS Mini Masterclass
+
+### 15. Styling Our Posts Application With SCSS
+>- styles.scss
+
+### 16. Angular Services
+
+### 17. Configuring Endpoint and Serving the Data
+>- https://beeceptor.com/mock-api/
+>- https://mp98fa5b12db0b91f4ee.free.beeceptor.com
+>- https://mp98fa5b12db0b91f4ee.free.beeceptor.com/posts
+
+### 18. Fetching Data From Service
+
+### 19. Subscribing to Data and Populating
+
+### 20. Pipes In Angular - Built-in Pipes - Custom Pipes
+
+### 21. Routing in Angular and Lazy Loading
+>- ng generate component presentation/navigation
+>- ng generate component presentation/profile

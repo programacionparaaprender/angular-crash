@@ -1,0 +1,15 @@
+<p>navigation works!</p>
+
+<div *appRoleBasedAccess="'Admin'">
+    <button>Edit User Settings</button>
+    <button>Manage Content</button>
+</div>
+<div *appRoleBasedAccess="'Editor'">
+    <button>Edit User Settings</button>
+    <button>Moderate Content</button>
+</div>
+<div *appRoleBasedAccess="'User'">
+    <p>Welcome, User!</p>
+</div>
+<a routerLink="posts">Posts</a>
+<a routerLink="profile">My Profile</a>

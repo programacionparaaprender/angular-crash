@@ -1,0 +1,86 @@
+.post {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 0 auto 25px auto;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    &:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+    h3 {
+        font-size: 22px;
+        color: #3b5998;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+    p {
+        background-color: #0078a4;
+        border-radius: 8px;
+        border: 1px solid #e1e3e6;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    .actions {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        button {
+            background-color: #4267B2;
+            color: #fff;
+            border:none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+    }
+    .comments {
+        margin-top: 20px;
+        h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: #3b5998;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            li {
+                background-color: #f2f3f5;
+                padding: 10px;
+                border-radius: 8px;
+                margin-bottom: 8px;
+                font-size: 15px;
+                color: #333;
+
+            }
+        }
+        input {
+            width: calc(100% - 90%);
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccd0d5;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        button {
+            padding: 10px 16px;
+            background-color: #4267B2;
+            color: #fff;
+            border:none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

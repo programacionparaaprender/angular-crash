@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+$theme: dark;
+@mixin button-styles($bg-color: blue, $text-color: white){
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+@function calculate-width($value){
+    @return $value * 1.5;
+}
+
+.button1 {
+    @include button-styles(black, white);
+}
+
+.button2 {
+    @include button-styles(red, white);
+    border-radius: 5px;
+}
+@for $i from 1 through 10 {
+    .margin-top-#{$i}{
+        margin-top: #{$i}px;
+    }
+}
+/* div {
+    width: calculate-width(200px);
+}
+
+
+
+body {
+    @if $theme == dark {
+        background-color: black;
+        color: white;
+    }@else {
+        background-color: white;
+        color: black;
+    }
+}
+ */
+
